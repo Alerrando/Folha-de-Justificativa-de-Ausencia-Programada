@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Folha Justificativa de Ausência Programada</title>
+</head>
+<body>
+    <header>
+        <div class='header-container'>
+            <div class='titulo'>
+                <h1>FOLHA DE JUSTIFICATIVA DE AUSÊNCIA PROGRAMADA</h1>
+            </div>
+
+            <div class='info-user'>
+                <div class='info-usuario'>
+                    <div class='usuario'>
+                        <span>Funcionário(a):</span>
+                    </div>
+                    <input type="text" name="funcionario" id="name-employee" />
+                </div>
+
+                <div class='info-matricula'>
+                    <div class='matricula'>
+                        <span>Matrícula:</span>
+                    </div>
+                    <input type="text" name="matricula" />
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container-main">
+            <div class='data-ocorrencia'>
+                <span>Data da ocorrência:</span>
+
+                <div class='date'>
+                    <div class='date-dia'>
+                        <input type="text" class='dia' name='dia' />
+                        <div class="traco"></div>
+                    </div>
+
+                    <div class="date-mes">
+                        <input type="text" class='mes' name='mes' />
+                        <div class="traco"></div>
+                    </div>
+
+                    <div class="date-ano">
+                        <input type="text" class='ano' name='ano' />
+                        <div class="traco"></div>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class='dados-ocorrencia'>
+                <div class='ocorrencia'>
+                    <div class="motivo-ocorrencia">
+                        <div class='motivo-marcar'>
+                            <input type="checkbox" />
+                        </div>
+                        <span>Entrada</span>
+                    </div>
+                    <div class="horario-ocorrencia">
+                        <span>Horário:</span>
+                        <input type="text" />
+                    </div>
+                </div>
+                <div class='ocorrencia'>
+                    <div class="motivo-ocorrencia">
+                        <div class='motivo-marcar'>
+                            <input type="checkbox" />
+                        </div>
+                        <span>Intervalo</span>
+                    </div>
+                    <div class="horario-ocorrencia">
+                        <span>Horário:</span>
+                        <input type="text" />
+                    </div>
+                </div>
+                <div class='ocorrencia'>
+                    <div class="motivo-ocorrencia">
+                        <div class='motivo-marcar'>
+                            <input type="checkbox" />
+                        </div>
+                        <span>Retorno do Intervalo</span>
+                    </div>
+                    <div class="horario-ocorrencia">
+                        <span>Horário:</span>
+                        <input type="text" />
+                    </div>
+                </div>
+                <div class='ocorrencia'>
+                    <div class="motivo-ocorrencia">
+                        <div class='motivo-marcar'>
+                            <input type="checkbox" />
+                        </div>
+                        <span>Saída</span>
+                    </div>
+                    <div class="horario-ocorrencia">
+                        <span>Horário:</span>
+                        <input type="text" />
+                    </div>
+                </div>
+                <div class='ocorrencia'>
+                    <div class="motivo-ocorrencia">
+                        <div class='motivo-marcar'>
+                            <input type="checkbox" />
+                        </div>
+                        <span>Abono de falta(s) por banco de horas</span>
+                    </div>
+                    <div class="horario-ocorrencia">
+                        <span>Data(s):</span>
+                        <input type="text" />
+                    </div>
+                </div>
+                <div class='ocorrencia'>
+                    <div class="motivo-ocorrencia">
+                        <div class='motivo-marcar'>
+                            <input type="checkbox" />
+                        </div>
+                        <span>Falta Abonada</span>
+                    </div>
+                    <div class="horario-ocorrencia">
+                        <span>Data:</span>
+                        <input type="text" />
+                    </div>
+                </div>
+                <div class='ocorrencia'>
+                    <div class="motivo-ocorrencia">
+                        <div class='motivo-marcar'>
+                            <input type="checkbox" />
+                        </div>
+                        <span>Falta Aniversário</span>
+                    </div>
+                    <div class="horario-ocorrencia">
+                        <span>Data:</span>
+                        <input type="text" />
+                    </div>
+                </div>
+                <div class='ocorrencia'>
+                    <div class="motivo-ocorrencia">
+                        <div class='motivo-marcar'>
+                            <input type="checkbox" />
+                        </div>
+                        <span>Falta(s) S.O.L</span>
+                    </div>
+                    <div class="horario-ocorrencia">
+                        <span>Data(s):</span>
+                        <input type="text" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container-footer">
+            <div class="justificativa-ausencia">
+                <span>Justificativa: </span>
+
+                <div class="justificativa-texto">
+                    <textarea name="justificativa" cols=30 rows=5></textarea>
+                </div>
+            </div>
+
+            <div class="assinaturas">
+                <div class='nome-funcionario'>
+                    <div class="nome"></div>
+
+                    <span>Assinatura do(a) funcionário(a)</span>
+
+                    <span id="assinatura-funcionario"></span>
+                </div>
+
+                <div class='superior-funcionario'>
+                    <div class="nome"></div>
+
+                    <span>Assinatura do Superior Imediato</span>
+
+                    <input type="text" name="rascunhoSuperior" class='rascunho-nome-superior' placeholder='Rascunho nome do superior' />
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+</html>

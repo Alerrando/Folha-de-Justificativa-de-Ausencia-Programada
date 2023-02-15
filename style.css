@@ -1,0 +1,314 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  padding-top: 1rem;
+  width: 100%;
+}
+
+header .header-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+  width: 100%;
+}
+
+header .header-container .titulo h1 {
+  font-size: 1rem;
+  text-align: center;
+}
+
+header .header-container .info-user {
+  display: block;
+  width: 100%;
+}
+
+header .header-container .info-user .info-usuario, header .header-container .info-user .info-matricula {
+  align-items: center;
+  border: 1px solid #000;
+  display: flex;
+}
+
+header .header-container .info-user .info-usuario .usuario, header .header-container .info-user .info-usuario .matricula, header .header-container .info-user .info-matricula .usuario, header .header-container .info-user .info-matricula .matricula {
+  border-right: 1px solid #000;
+  width: 180px;
+}
+
+header .header-container .info-user .info-usuario .usuario span, header .header-container .info-user .info-usuario .matricula span, header .header-container .info-user .info-matricula .usuario span, header .header-container .info-user .info-matricula .matricula span {
+  font-weight: 700;
+}
+
+header .header-container .info-user .info-usuario input, header .header-container .info-user .info-matricula input {
+  border: none;
+  background-color: transparent;
+  padding: 0 10px;
+  outline: none;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  header {
+    padding-top: 0.8rem;
+    width: 100%;
+  }
+  header .header-container .titulo h1 {
+    font-size: 1.5rem;
+  }
+  header .header-container .info-user {
+    display: block;
+    width: 60%;
+  }
+  header .header-container .info-user .usuario, header .header-container .info-user .matricula {
+    width: 135px !important;
+  }
+}
+
+main {
+  margin-top: 2rem;
+  width: 100%;
+}
+
+main .container-main {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 15px;
+  width: 100%;
+}
+
+main .container-main .data-ocorrencia {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  width: 100%;
+}
+
+main .container-main .data-ocorrencia span {
+  font-weight: 700;
+}
+
+main .container-main .data-ocorrencia .date-dia, main .container-main .data-ocorrencia .date-mes, main .container-main .data-ocorrencia .date-ano {
+  align-items: end;
+  display: flex;
+}
+
+main .container-main .data-ocorrencia .date-dia .traco, main .container-main .data-ocorrencia .date-mes .traco, main .container-main .data-ocorrencia .date-ano .traco {
+  background-color: #000;
+  height: 12px;
+  transform: rotate(25deg);
+  width: 2px;
+}
+
+main .container-main .data-ocorrencia .date {
+  align-items: end;
+  display: flex;
+  gap: 10px;
+}
+
+main .container-main .data-ocorrencia .date .dia, main .container-main .data-ocorrencia .date .mes, main .container-main .data-ocorrencia .date .ano {
+  border: none;
+  border-bottom: 1px solid #000;
+  height: auto;
+  outline: none;
+  width: 50px;
+}
+
+main .container-main .dados-ocorrencia {
+  margin-right: auto;
+}
+
+main .container-main .dados-ocorrencia .ocorrencia {
+  align-items: center;
+  border: 1px solid #000;
+  display: flex;
+}
+
+main .container-main .dados-ocorrencia .ocorrencia .motivo-ocorrencia, main .container-main .dados-ocorrencia .ocorrencia .horario-ocorrencia {
+  font-weight: 700;
+  padding: 0 8px;
+  width: 50%;
+}
+
+main .container-main .dados-ocorrencia .ocorrencia .horario-ocorrencia {
+  display: flex;
+}
+
+main .container-main .dados-ocorrencia .ocorrencia .horario-ocorrencia input {
+  border: none;
+  padding: 0 10px;
+  outline: none;
+  width: 100%;
+}
+
+main .container-main .dados-ocorrencia .ocorrencia .motivo-ocorrencia {
+  border-right: 1px solid #000;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  padding: 3px 6px;
+}
+
+main .container-main .dados-ocorrencia .ocorrencia .motivo-ocorrencia .motivo-marcar {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+}
+
+main .container-main .dados-ocorrencia .ocorrencia .motivo-ocorrencia span {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  main .container-main .data-ocorrencia, main .container-main .dados-ocorrencia {
+    width: 60%;
+  }
+
+  main .container-main .data-ocorrencia .date {
+    align-items: end;
+    display: flex;
+    gap: 10px;
+  }
+
+  main .container-main .data-ocorrencia .date .dia, main .container-main .data-ocorrencia .date .mes, main .container-main .data-ocorrencia .date .ano {
+    border: none;
+    border-bottom: 1px solid #000;
+    height: auto;
+    outline: none;
+    width: 100px;
+  }
+
+  main .container-main .dados-ocorrencia {
+    margin: 0;
+  }
+
+  main .container-main .dados-ocorrencia .ocorrencia .motivo-ocorrencia span {
+    font-size: 16px;
+  }
+  
+}
+
+footer {
+  margin-top: 8%;
+  width: 100%;
+}
+
+footer .container-footer {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+  width: 100%;
+}
+
+footer .container-footer .justificativa-ausencia, footer .container-footer .assinaturas {
+  width: 100%;
+}
+
+footer .container-footer .justificativa-ausencia {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0 10px;
+}
+
+footer .container-footer .justificativa-ausencia span {
+  font-weight: 700;
+}
+
+footer .container-footer .justificativa-ausencia .justificativa-texto textarea {
+  padding: 5px 10px;
+  resize: none;
+  outline: none;
+  width: 100%;
+}
+
+footer .container-footer .assinaturas {
+  align-items: start;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+footer .container-footer .assinaturas .nome-funcionario, footer .container-footer .assinaturas .superior-funcionario {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: auto;
+  text-align: center;
+  width: 50%;
+}
+
+footer .container-footer .assinaturas .nome-funcionario .nome, footer .container-footer .assinaturas .superior-funcionario .nome {
+  border: none;
+  border-bottom: 1px solid #000;
+  margin: 0 auto;
+  text-align: center;
+  outline: none;
+  width: 75%;
+}
+
+footer .container-footer .assinaturas .nome-funcionario span, footer .container-footer .assinaturas .superior-funcionario span {
+  align-items: center;
+  display: flex;
+  font-size: 13px;
+  justify-content: center;
+  width: 100%;
+}
+
+footer .container-footer .assinaturas .nome-funcionario, footer .container-footer .assinaturas .superior-funcionario {
+  width: 50%;
+}
+
+footer .container-footer .assinaturas .superior-funcionario .rascunho-nome-superior {
+  border: none;
+  border-bottom: 1px solid #b9b9b9;
+  font-size: 11px;
+  margin: 0 auto;
+  padding: 2px 0;
+  outline: none;
+  width: 90%;
+}
+
+@media (min-width: 768px) {
+  footer {
+    margin-top: 2.2%;
+ }
+
+  footer .container-footer .justificativa-ausencia, footer .container-footer .assinaturas {
+    width: 60%;
+ }
+
+  footer .container-footer .justificativa-ausencia {
+    padding: 0;
+ }
+ 
+  footer .container-footer .assinaturas .nome-funcionario .nome, footer .container-footer .assinaturas .superior-funcionario .nome {
+    width: 100%;
+ }
+
+  footer .container-footer .assinaturas .nome-funcionario span, footer .container-footer .assinaturas .superior-funcionario span {
+    font-size: 16px;
+ }
+
+  footer .container-footer .assinaturas .nome-funcionario {
+    width: 255px;
+ }
+
+  footer .container-footer .assinaturas .superior-funcionario {
+    width: 255px;
+ }
+
+  footer .container-footer .assinaturas .superior-funcionario .rascunho-nome-superior {
+    font-size: 14px;
+    width: 100%;
+ }
+
+}
